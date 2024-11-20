@@ -1,0 +1,44 @@
+body{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image:url(metir/רקע.jpg);
+    display: grid;
+    grid-template-rows:1fr;
+    grid-template-columns:75% 1fr;
+    grid-gap: 25px;
+    grid-template-areas:
+   ". article nav ."
+  
+}
+article{
+    margin:16%;
+    grid-area: article;
+}
+nav{ 
+    margin-top: 55%;
+    width:100%;
+    grid-area: nav;
+    text-align: center;
+    color: #ff738e;
+    font-size: 40px;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    background-color: #ff738e;
+    border: #ff738e;
+}
+a{
+    margin-top: 10%;
+    color: #ff738e;
+    direction: rtl;
+    text-decoration: none;
+}
+button{
+    background-color: #ff738e;
+    border: #ff738e;
+    margin-left: 35px;
+    margin-right: 35px;
+    width: 70px;
+    height:40px;
+}

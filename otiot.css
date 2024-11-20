@@ -1,0 +1,68 @@
+footer {
+    text-align: center;
+    grid-area: footer;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cadetblue;
+    direction: rtl;
+    font-size: 66px;
+}
+
+a {
+    grid-area: nav;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding: 8.5%;
+    border-radius: 15px;
+    text-align: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #00c4cc;
+    direction: rtl;
+    text-decoration: none;
+    color: black;
+}
+
+article {
+    margin-left: 10%;
+    margin-right: 15%;
+    grid-area: article;
+}
+
+video {
+
+    width: 100%;
+}
+
+body {
+    background-image: url(metir/רקע.jpg);
+    display: grid;
+    grid-template-rows: 15% 1fr;
+    grid-template-columns: 10% 1fr;
+    grid-template-areas:
+        "nav footer"
+        ". article";
+}
+
+@media (max-width:600px) {
+    article {
+        margin: auto;
+    }
+
+    body {
+        background-image: url(metir/רקע.jpg);
+        display: grid;
+        grid-template-rows: 1fr 5%;
+        grid-template-columns:1fr;
+        grid-template-areas:
+            "article "
+            "nav ";
+    }
+
+    footer {
+        display: none;
+    }
+    a{
+        margin-bottom: auto;
+    }
+}

@@ -1,0 +1,12 @@
+body {
+    background-image: url(../פרוייקט/metir/רקע.jpg);
+}
+
+label {
+    color: #ff738e;
+}
+
+div {
+    color: #00c4cc;
+    direction: rtl;
+}

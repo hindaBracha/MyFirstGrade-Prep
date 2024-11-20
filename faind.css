@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.img-magnifier-container {
+    position: relative;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    grid-area: nav;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    direction: rtl;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 1px 1px 3px #00c4cc;
+    color: #00c4cc;
+}
+
+body {
+    background-image: url(metir/רקע.jpg);
+    display: grid;
+    grid-template-rows: 85% 15%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "nav"
+        "footer";
+}

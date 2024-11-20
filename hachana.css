@@ -1,0 +1,136 @@
+body {
+    background-image: url(metir/רקע.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.reka {
+    grid-area: div;
+    width: 100%;
+    height: inherit;
+}
+
+.undereka {
+    grid-area: unr;
+    width: 100%;
+    height: inherit;
+    margin-top: 2%;
+}
+
+.yalkut {
+    grid-area: yalkut;
+    background-color: #FFA53B;
+    text-align: right;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5vw;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    margin-top: 12%;
+    margin-left: 5%;
+    margin-right: 20%;
+
+}
+
+.kalmar {
+    grid-area: kalmar;
+    background-color: #FFA53B;
+    text-align: right;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5vw;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    margin-top: 12%;
+    margin-right: 5%;
+    margin-left: 20%;
+}
+
+table {
+    grid-area: table;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1vw;
+    direction: rtl;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+tr:hover,
+tr:active {
+    background-color: #a548ff;
+    opacity: 0.7;
+}
+
+caption {
+    font-size: 2vw;
+}
+
+th {
+    padding: 8px;
+    border: 3px solid #a548ff;
+    background-color: #a548ff;
+    opacity: 0.7; 
+}
+
+td {
+    padding: 8px;
+    border: 3px solid #ff738e;
+}
+
+img {
+    width: 50%;
+    height: inherit;
+    float: left;
+}
+body {
+    background-image: url(metir/רקע.jpg);
+    display: grid;
+    grid-template-rows: 25rem 14rem 35rem 8rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "div div div div"
+        "unr unr unr unr"
+        "table table table table"
+        "kalmar kalmar yalkut yalkut";
+
+}
+
+@media (max-width: 728px) {
+    body {
+        background-image: url(metir/רקע.jpg);
+        display: grid;
+        grid-template-rows: 200px 150px 500px 60px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "div div div div"
+            "unr unr unr unr"
+            "table table table table"
+            "kalmar kalmar yalkut yalkut";
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(metir/רקע.jpg);
+        display: grid;
+        grid-template-rows: 200px 150px 500px 60px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "div div div div"
+            "unr unr unr unr"
+            "table table table table"
+            "kalmar kalmar yalkut yalkut";
+    }
+
+    table {
+        margin-right: 15px;
+        width: 80%;
+    }
+}

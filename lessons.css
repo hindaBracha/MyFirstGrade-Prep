@@ -1,0 +1,136 @@
+article {
+  grid-area: article;
+  direction: rtl;
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 1px 1px 3px #00c4cc;
+  color: rgb(255, 255, 255);
+
+}
+
+nav {
+  grid-area: nav;
+}
+
+aside {
+  margin: auto;
+}
+
+aside:after {
+  grid-area: aside;
+  display: flex;
+  position: absolute;
+}
+
+.one {
+  text-align: center;
+  font-size: 35px;
+  direction: rtl;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  margin: 12px;
+
+
+}
+
+.too {
+  text-align: center;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  margin: 12px;
+
+}
+
+.tree {
+  text-align: center;
+  font-size: 35px;
+  direction: rtl;
+  direction: rtl;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  margin: 12px;
+
+}
+
+.fore {
+  text-align: center;
+  font-size: 35px;
+  direction: rtl;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 12px;
+  float: left;
+
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 350px;
+  height: 400px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  /*הופך אותו*/
+  transform-style: preserve-3d;
+  /* בצד השני מה שיראה */
+
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: rgb(225, 181, 181);
+  color: #ff738e;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: #ff738e;
+  transform: rotateY(180deg);
+}
+
+input {
+  width: 70%;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  height: 200px
+}
+
+.magdelet {
+  width: 100%;
+  height: inherit;
+}
+
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url(metir/רקע.jpg);
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "article "
+    "aside"
+    "footer";
+}

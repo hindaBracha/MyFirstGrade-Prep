@@ -1,0 +1,154 @@
+html{
+    font-size: 10px;
+}
+article {
+    grid-area: article;
+
+}
+
+nav {
+    grid-area: nav;
+    background-color: #00c4cc;
+    opacity: 0.6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* text-align: center;
+    color: #a548ff;
+    font-family: system-ui,  'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4vw;
+    direction: rtl;
+    unicode-bidi: bidi-override; */
+    background-image: url(metir/ילדים\ וספרים.png);
+    background-size: 100%;
+    background-position:center bottom;
+    background-repeat: no-repeat;
+
+}
+
+footer {
+    grid-area: footer;
+    background-image: url(metir/פוטרפוטר.gif);
+}
+
+.limud {
+    background-color: #00c4cc;
+    grid-area: limud;
+    text-align: center;
+    /* padding: 8.5%; */
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-size: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.hafska {
+    background-color: #a548ff;
+    grid-area: hafska;
+    text-align: center;
+    /* padding: 8.5%; */
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-size: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.hachana {
+    background-color: #ff738e;
+    grid-area: hachana;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-size: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.luach {
+    background-color: #ffa53b;
+    grid-area: luach;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-size: 3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.aside {
+    width: 100%;
+
+}
+
+aside {
+    grid-area: aside;
+    background-image: url(metir/ווליום\ ארוך.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+body {
+    background-image: url(metir/רקע.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows:  10rem 50rem 10rem ;
+    /* 8rem 31.5rem 6rem */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "limud hafska hachana luach"
+        "article aside nav nav"
+        "footer footer footer footer";
+}
+body {
+    /* background-image: url(metir/רקע.jpg); */
+    /* background-repeat: no-repeat; */
+    display: grid;
+    grid-template-rows:  10rem 50rem 10rem ;
+    /* 8rem 31.5rem 6rem */
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+        "nav nav"
+        "input result"
+        "search result"
+}
+
+a:hover,
+a:active {
+    background-color: #FFB8B8;
+    opacity: 0.8;
+}
+
+@media (max-width:995px) {
+    body {
+
+        display: grid;
+        grid-template-rows: 75px 520px 90px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas:
+            "limud hafska hachana luach"
+            "nav nav nav nav"
+            "footer footer footer footer";
+    }
+
+}
+
+@media (max-width:600px) {
+    body {
+        background-image: url(metir/רקע.jpg);
+        display: grid;
+        grid-template-rows: 50px 500px 90px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas:
+            "limud hafska hachana luach"
+            "nav nav nav nav"
+            "footer footer footer footer";
+    }
+
+   
+
+   
+    
+}
